@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  background-image: url(decor/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+.Game {
+  display: block;
+  width:90%;
+  padding: 2vh;
+}
+
+.MainGame {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.audioSetting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+  width: 100%;
+  justify-content: center;
+}
+
+.leftIns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 10vh;
+  width: 30%;
+  padding: 5vw;
+  margin-right:30%;
+  /* right: 350px; */
+}
+
+.rightIns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  right:150px;
+  top:10vh;
+  width:30%;
+}
+
+.rightInstag {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#rightInstag2 {
+  top: 100px;
+}
+
+#pattern {
+  position: relative;
+  top: 250px;
+  left: 50px;
+}
+
+.inst2 {
+  width: 200px;
+}
+
+h3,
+h4 {
+  max-width: 80%; /* Allows the text to take up a reasonable portion of the available width */
+  margin: 0 auto; /* Centers the element horizontally within its parent */
+}
+
+h5{
+  max-width: 80%; /* Allows the text to take up a reasonable portion of the available width */
+  margin: 0 auto; /* Centers the element horizontally within its parent */
+  /* background-color: #f9f9f9; */
+  color: #ff0000;
+}
+
+#mahjong-tiles {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1vw;
+}
+
+#player-role {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 6px solid #ccc;
+  text-align: center;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #ccc;
+  font-size: 24px;
+  position: relative;
+  /* 确保子元素定位正确 */
+}
+
+.tile img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  /* 保持图片比例 */
+  pointer-events: none;
+  /* 禁止图片捕获拖拽事件 */
+}
+
+.tile.draggable {
+  cursor: grab;
+}
+
+#volumeSlider {
+  width: 200px;
+  /* 设置滑动条宽度 */
+  height: 5px;
+  /* 设置滑动条高度 */
+  background-color: #ccc;
+  /* 设置滑动条背景颜色 */
+}
+
+#ReferenceButton {
+  width: 180px;
+}
+
+.tile:empty:hover {
+  background-color: #e0e0e0;
+}
